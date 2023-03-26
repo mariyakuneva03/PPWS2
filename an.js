@@ -1,5 +1,5 @@
 
-
+//generating the header's text
 const resolver = {
     resolve: function resolve(options, callback) {
       // The string to resolve
@@ -105,7 +105,7 @@ const resolver = {
   
   
   ////////////////////////////////////////////////////////
-  
+  //divs appearing on scroll 
   
   const scrollElements = document.querySelectorAll(".js-scroll");
   
@@ -149,7 +149,22 @@ const resolver = {
   });
   
   ////////////////////////////////////////////////////////////
-  // // 
+  //"scroll for more" disappear on scroll
+
+  let scrollpos = window.scrollY
+
+  const header = document.getElementById("section10")
+  const scrollChange = 1
+  
+  const add_class_on_scroll = () => header.classList.add("none")
+  
+  window.addEventListener('scroll', function() { 
+    scrollpos = window.scrollY;
+  
+    if (scrollpos >= scrollChange) { add_class_on_scroll() }
+  
+    
+  })
   
   
   
