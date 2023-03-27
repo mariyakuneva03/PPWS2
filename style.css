@@ -409,6 +409,7 @@ footer span{color: white;}
 
 /*UCD PAGE*/
 button{background: none;border: none;cursor: pointer;outline: inherit;}
+.flip-cards-back a:hover{text-decoration: underline !important;}
 /*back arrow*/
 .back{position: absolute;top:0; left:1em;color: white;font-size: 4em;}
 
