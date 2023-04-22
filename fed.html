@@ -17,30 +17,58 @@
             <h1>Front End Development</h1>
             <section class="links">
                 <br><br>
-                <div id="text" class="scroll-element" >
-                    <h3>The first webpage we had to recreate was hermes.nl. I didn't learn any new things I already knew how to properly recreate in. This is the end result:<br><br> <a href="hermes/index.html">Hermes web page</a></h3>  
-                </div>
-                <section id="section10" class="demo">
-                    <span><p>Scroll<br>for more</p></span>
-                  </section>
-                <div id="text" class="scroll-element js-scroll fade-in right" >
-                   <h3>We had to choose another webpage to recreate. I chose this wine website https://drinkavaline.com/. It was more challenging, because I used JavaScript for the navbar. I was interested in how to do the changing of the style of the navbar. I did some research and I actually managed to do it. This is the final result:<br><br> <a href="wine/index.html">Wine web page</a></h3> 
-                </div>
-                <div id="text" class="scroll-element js-scroll fade-in" >
-                    <h3>We had to create a layout using grid or flexbox. I already had some experience with flexbox, but this time I wanted to get more comfortable with using grid. I am pretty satisfied with the final result. I also added transform properties to the pictures to make it more interesting.<br><br><a href="layout/index.html">Layout web page</a></h3>
-                </div>
-                <div id="text" class="scroll-element js-scroll fade-in right" >
-                    <h3>I also created prototype for my portfolio, which ended a little bit different.<br><a href="img/pt.PNG">Prototype</a></h3>
-                </div>
-                <div id="text" class="scroll-element js-scroll fade-in " >
-                    <h3>For the animation challenge I added animation fading in in my portfolio.</h3>
-                </div>
-                
+                <img src="img/hermes.png" onclick="toggleModal(modalH)">
+                <img src="img/wine.png" onclick="toggleModal(modalW)">
+                <img src="img/layout.png" onclick="toggleModal(modalL)">
+                <img src="img/protoype.png" onclick="toggleModal(modalP)">
+
+                <!--  MODAL -->
+			<div class="modal" id="Hermes">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalH)">&times;</span>
+                    <h3>The first webpage we had to recreate was hermes.nl. I didn't learn any new things I already knew how to properly recreate in. This is the end result:<br><br>
+                        <a href="hermes/index.html">Hermes web page</a></h3>  
+				</div>
+			</div>
+
+             <!--  MODAL -->
+			<div class="modal" id="Wine">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalW)">&times;</span>
+                    <h3>We had to choose another webpage to recreate. I chose this wine website https://drinkavaline.com/. It was more challenging, because I used JavaScript for the navbar. I was interested in how to do the changing of the style of the navbar. I did some research and I actually managed to do it. This is the final result:<br><br>
+                         <a href="wine/index.html">Wine web page</a></h3> 
+				</div>
+			</div>
+
+            <!--  MODAL -->
+			<div class="modal" id="Layout">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalL)">&times;</span>
+                    <h3>We had to create a layout using grid or flexbox. I already had some experience with flexbox, but this time I wanted to get more comfortable with using grid. I am pretty satisfied with the final result. I also added transform properties to the pictures to make it more interesting.<br><br>
+                        <a href="layout/index.html">Layout web page</a></h3>
+
+				</div>
+			</div>
+
+            <!--  MODAL -->
+			<div class="modal" id="Prototype">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalP)">&times;</span>
+                    <h3>I also created prototype for my portfolio, which ended a little bit different.<br><br>
+                        <a href="img/pt.PNG">Prototype</a></h3>
+
+
+				</div>
+			</div>
             </section>
             
         </main>
-        <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
-        <footer id="footer" class="scroll-element js-scroll fade-in"> 
+        
+        <footer id="footer" > 
             <img class="logo" src="img/mk.png"><br><br>
             <div id="links" >
                 <a href="ucd.html">UCD</a>
