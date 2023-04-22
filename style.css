@@ -1,19 +1,20 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&family=Patrick+Hand&display=swap');
 * {
   box-sizing: border-box;
 }
 
 html{height: fit-content;
   margin: 0;  background: #111;scroll-behavior: smooth;}
-body {
+body {font-family: 'Patrick Hand', cursive;
     animation: fadeInAnimation ease 3s;
     animation-iteration-count: 1;
     animation-fill-mode: forwards;
   height: fit-content;
   margin: 0;
-  font-family: "Unica One", sans-serif;
    background-image:url('img/bg.png');
 }
 a{text-decoration: none;}
+body#fed{height: 80vh;}
 
 
 
@@ -29,7 +30,7 @@ a{text-decoration: none;}
 }
 
 /*HEADER*/
-header{padding:0 1em;margin:0 1em; }
+header{padding:0 1em;margin:0 1em;}
 nav{display: flex; justify-items: center;}
 img.logo{width: 5em;}
 header a{margin-left:auto;margin-right:auto; }
@@ -38,7 +39,7 @@ section#intro{display: grid; grid-template-columns: repeat(2, 1fr);margin: 0 4em
 header.home{height: 100vh!important}
 
 /*MAIN*/
-main{margin: 0 8em;height: 100vh;}
+main{margin: 3em 8em 6em 8em;}
 section#aboutMe{left:0;height: 50vh;}
 
 .cont {
@@ -51,7 +52,7 @@ margin: -3em 2em;
 }
 
 div#text{margin-bottom:2em;border-radius:2em !important;height: fit-content !important;font-size: 1em;}
-div#text h3{font-weight: 400;color:black;}
+div#text h3{font-weight: 400;color: #4e4a67;}
 div#text a{font-weight: 400;color:#686868;font-size: 1em;}
 div#text a:hover{text-decoration: underline;}
 
@@ -181,11 +182,11 @@ opacity: 1;
 }
 
 .scrolled.fade-in {
-animation: fade-in 1.5s ease-in-out both;
+animation: fade-in 1s ease-in-out both;
 }
 
 .scrolled.fade-in-bottom {
-animation: fade-in-bottom 1.5s ease-in-out both;
+animation: fade-in-bottom 1s ease-in-out both;
 }
 
 
@@ -227,7 +228,7 @@ animation: fade-in-bottom 1.5s ease-in-out both;
 
 section.projects{  display: flex;
 align-items: center;
-justify-content: flex-end;;height: 50vh;}
+justify-content: flex-end;height: 50vh;}
 
 
 
@@ -282,8 +283,7 @@ transition: .6s;
 #slide_1:checked ~ .inner_part .img_1,
 #slide_2:checked ~ .inner_part .img_2,
 #slide_3:checked ~ .inner_part .img_3,
-#slide_4:checked ~ .inner_part .img_4,
-#slide_5:checked ~ .inner_part .img_5 {
+#slide_4:checked ~ .inner_part .img_4{
 opacity: 1;
 transition-delay: .2s;
 }
@@ -303,8 +303,7 @@ display: none;
 #slide_1:checked ~ .inner_part .content_1,
 #slide_2:checked ~ .inner_part .content_2,
 #slide_3:checked ~ .inner_part .content_3,
-#slide_4:checked ~ .inner_part .content_4,
-#slide_5:checked ~ .inner_part .content_5 {
+#slide_4:checked ~ .inner_part .content_4{
 opacity: 1;
 margin-left: 0;
 z-index: 100;
@@ -312,17 +311,17 @@ transition-delay: .3s;
 }
 
 .content .title {
-font-size: 1.5em;
+font-size: 1.7em;
 font-weight: 700;
 color: #0d0925;
 margin: 0 0 1.2em 0;
 }
 
 .content .text {
-font-size: 1em;
+font-size: 1.2em;
 color: #4e4a67;
-margin: 0 auto 1.8em auto;
-line-height: 1.5em;
+margin: 0 auto 1.2em auto;
+line-height: 1.3em;
 text-align: justify;
 }
 
@@ -338,6 +337,7 @@ cursor: pointer;
 outline: none;
 background: #000000;
 float: right;
+font-family: 'Patrick Hand', cursive;
 }
 
 .content button:hover {
@@ -386,8 +386,7 @@ transform-origin: left;
 #slide_1:checked ~ .slider .slide_1:before,
 #slide_2:checked ~ .slider .slide_2:before,
 #slide_3:checked ~ .slider .slide_3:before,
-#slide_4:checked ~ .slider .slide_4:before,
-#slide_5:checked ~ .slider .slide_5:before {
+#slide_4:checked ~ .slider .slide_4:before {
 transform: scaleX(1);
 width: 100%;
 }
@@ -401,7 +400,7 @@ display: none;
 footer#footer {width: 100% !important;padding:2em 10em;background-color: black; height: 30vh;display: flex;flex-direction: column;align-items: center;justify-content: space-around;}
 div#links{ color: white;   margin-bottom: 0.7%;}
 div#links>a:not(:last-child)::after{content: '';display: inline-block;margin: 0 10px -2px;width: 1px;height: 14px;background: #ccc;} 
-div#links>a{display: inline-block; margin: 0;font-size: 1em;}
+div#links>a{display: inline-block; margin: 0;font-size: 1.2em;}
 footer>a{width: fit-content;}
 footer a:hover{text-decoration: underline;}
 footer div#flex{display: flex;justify-content: space-between; width: -webkit-fill-available;}
@@ -533,11 +532,11 @@ button{background: none;border: none;cursor: pointer;outline: inherit;}
 
 
 /*FED, MEDIA PRODUCTION, GROUP PROJECT PAGE*/
-h1{color:white;text-align: center;}
-section.links{display: flex;flex-wrap: wrap;}
+h1{color:white;text-align: center; font-size: 2.5em;}
+section.links{display: grid; grid-template-columns: repeat(4,1fr); grid-gap:2em; justify-items: center;margin-top: 4em;margin-bottom: 4em;}
 section.links a{font-size: 1.2em;line-height: 1.5em;}
-section.links img{width: 20vw;height: auto;}
-section.links img:hover{cursor: pointer;}
+section.links img{width: 12vw;height: auto;}
+section.links img:hover{cursor: pointer;background-color:rgba(192,192,192,0.3);}
 .right{ margin-left: 50%;}
 
 #section10{margin:0 auto;}
@@ -620,6 +619,7 @@ opacity: 0;
 visibility: hidden;
 transform: scale(1.1);
 transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+z-index: 2;
 
 }
 .modal-content {
@@ -665,3 +665,54 @@ transform: scale(1.0);
 transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
 }
 .stopScroll{overflow: hidden;}
+
+
+/*MEDIA PAGE*/
+.photogrid img{transition: transform .2s; /* Animation */}
+.photogrid img:hover{transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */}
+.photogrid h2{display: block;}
+.photogrid svg{position:absolute;z-index: 1;}
+svg#arrow1{width: 1.8em; margin-top: -1.2em;margin-left: 0.5em;}
+svg#arrow2{width: 0.8em; margin-top:0.7em;margin-left: -0.8em;}
+svg#arrow3{width: 1.2em; margin-top:0.7em;margin-left: 0.3em;}
+svg#arrow4{width: 1em; margin-top:-1.8em;margin-left: -0.8em;}
+.row{display: flex;
+flex-wrap: wrap;
+padding: 0 4px;}
+
+
+/* Create four equal columns that sits next to each other */
+.column {
+flex: 20%;
+max-width: 25%;
+padding: 0 6px;
+}
+
+.column img {
+margin-top: 1em;
+vertical-align: middle;
+width: 100%;
+}
+.space{
+height: fit-content;
+text-align: center;
+}
+h2{
+color:white;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 800px) {
+.column {
+  flex: 50%;
+  max-width: 50%;
+}
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+.column {
+  flex: 100%;
+  max-width: 100%;
+}
+}

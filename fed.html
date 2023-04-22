@@ -4,9 +4,10 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="stylesheet" href="style.css">
+    
 	<title>FED</title>
 </head>
-    <body>
+    <body id="fed">
         <header id="top">
             <button class="back" onclick="history.back()">&#8592;</button>
             <nav>
@@ -16,11 +17,12 @@
         <main>
             <h1>Front End Development</h1>
             <section class="links">
-                <br><br>
-                <img src="img/hermes.png" onclick="toggleModal(modalH)">
-                <img src="img/wine.png" onclick="toggleModal(modalW)">
-                <img src="img/layout.png" onclick="toggleModal(modalL)">
-                <img src="img/protoype.png" onclick="toggleModal(modalP)">
+                <img src="img/Hermes.png" onclick="toggleModal(modalH)">
+                <img src="img/Wine.png" onclick="toggleModal(modalW)">
+                <img src="img/Layout.png" onclick="toggleModal(modalL)">
+                <img src="img/Portfolio.png" onclick="toggleModal(modalP)">
+                <img src="img/level0.png" onclick="toggleModal(modalL0)">
+                <img src="img/level1.png" onclick="toggleModal(modalL1)">
 
                 <!--  MODAL -->
 			<div class="modal" id="Hermes">
@@ -49,7 +51,6 @@
 					<span class="close-button" onclick="toggleModal(modalL)">&times;</span>
                     <h3>We had to create a layout using grid or flexbox. I already had some experience with flexbox, but this time I wanted to get more comfortable with using grid. I am pretty satisfied with the final result. I also added transform properties to the pictures to make it more interesting.<br><br>
                         <a href="layout/index.html">Layout web page</a></h3>
-
 				</div>
 			</div>
 
@@ -60,8 +61,26 @@
 					<span class="close-button" onclick="toggleModal(modalP)">&times;</span>
                     <h3>I also created prototype for my portfolio, which ended a little bit different.<br><br>
                         <a href="img/pt.PNG">Prototype</a></h3>
+				</div>
+			</div>
 
+            <!--  MODAL -->
+			<div class="modal" id="l0">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalL0)">&times;</span>
+                    <h3><br><br>
+                        <a href="https://github.com/mariyakuneva03/PPWS2/tree/main/Level%200%20Challenges">Level 0 Challenges Folder</a></h3>
+				</div>
+			</div>
 
+            <!--  MODAL -->
+			<div class="modal" id="l1">
+				<div class="modal-content">
+					<!--close button that close the modal by removing the show-modal class-->
+					<span class="close-button" onclick="toggleModal(modalL1)">&times;</span>
+                    <h3><br><br>
+                        <a href="https://github.com/mariyakuneva03/PPWS2/tree/main/Level%201%20Challenges">Level 1 Challenges Folder</a></h3>
 				</div>
 			</div>
             </section>
@@ -75,7 +94,6 @@
                 <a href="mp.html">Media Production</a>
                 <a href="fed.html">Front End Development</a>
                 <a href="gp.html">Group Project</a>
-                <a href="sp.html">Side Projects</a>
             </div>
             <div id="flex" >
                 <span>© Maria Kuneva</span>
