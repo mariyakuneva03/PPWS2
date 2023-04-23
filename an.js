@@ -1,3 +1,4 @@
+
 //generating the header's text
 
 const resolver = {
@@ -175,6 +176,10 @@ var modalP = document.getElementById("Prototype");
 var modalPL = document.getElementById("pl");
 var modalL0 = document.getElementById("l0");
 var modalL1 = document.getElementById("l1");
+var modalA = document.getElementById("ag");
+var modalPP = document.getElementById("pp");
+var modalAP = document.getElementById("ap");
+var modalWL = document.getElementById("wl");
 let modal=document.getElementsByClassName(".modal");
 var body = document.getElementsByTagName("BODY")[0];
 

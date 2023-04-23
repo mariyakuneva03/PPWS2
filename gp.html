@@ -17,18 +17,57 @@
         <main>
             <h1>Group Project</h1>
             <section class="links">
-                <br><br>
-                <div id="text" class="scroll-element " >
-                    <h3>The first thing we made as a group was to come up with agreements. We settled on some agreements and I created the <a href="files/Agreements-GreenTeam.pdf">Agreements document</a></h3>
-                </div>
-                <section id="section10" class="demo">
-                  <span><p>Scroll<br>for more</p></span>
-                </section>
-                <div id="text" class="scroll-element js-scroll fade-in right" >
-                    <h3>After the Agreemnets document we started creating the <a href="files/Project Plan.pdf">Project Plan</a>. I did the automatic table of contents and the risk assessments. Me and Hanga came up with the research questions, we wrote the research methods</h3>
-                </div>
-                  
+                <img src="img/ag.png" onclick="toggleModal(modalA)">
+                <img src="img/pp.png" onclick="toggleModal(modalPP)">
+                <img src="img/Artist Persona.png" onclick="toggleModal(modalAP)">
+                <img src="img/webLogo.png" onclick="toggleModal(modalWL)">
+
             </section>
+
+             <!--  MODAL -->
+             <div class="modal" id="ag">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalA)">&times;</span>
+                    <h3>The first thing we made as a group was to come up with agreements. We settled on some agreements, I wrote them all down and after that created the Agreements document itself.<br>
+                    <a href="img/ag.png">Agreements document</a></h3>
+                        
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="pp">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalPP)">&times;</span>
+                    <h3>After the Agreemnets document we started creating the Project Plan. I did the automatic table of contents and the risk assessments. Me and Hanga came up with the research questions, we wrote the research methods and connect them with the questions.<br>
+                    <a href="files/Project Plan.pdf">Project Plan</a></h3>
+                        
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="ap">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalAP)">&times;</span>
+                    <h3>After we looked at the interviews with Eleni and her answers to the questions we asked we created our Artist Persona. We based it on Eleni's artistic visions are thoughts, because she mentioned that her main target group is researchers (people interested in her specie and her activities). I worked on the design of the persona - the colors, layout.  <br>
+                    <a href="img/Artist Persona.png">Artist Persona</a></h3>
+                        
+                </div>
+            </div>
+
+            <!--  MODAL -->
+            <div class="modal" id="wl">
+                <div class="modal-content">
+                    <!--close button that close the modal by removing the show-modal class-->
+                    <span class="close-button" onclick="toggleModal(modalWL)">&times;</span>
+                    <h3>After researching Eleni's specie we found that "bradipus" means sloth. From there we started brainstorming and we came up with our idea of the logo - sloth (representing slowing down) and two people huging with a chat bubble between them (representing conectivity). After the logo was done we printed it and we separeted in pairs and did some user testing. We asked people what they see in the logo. Here are my notes from my research: <br>
+                        <a href="img/notes.png">My notes</a><br>
+                    <a href="files/logoTest3.pdf">Logo</a></h3>
+                        
+                </div>
+            </div>
         </main>
      
         <footer id="footer" > 

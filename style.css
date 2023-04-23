@@ -679,7 +679,7 @@ svg#arrow4{width: 1em; margin-top:-1.8em;margin-left: -0.8em;}
 .row{display: flex;
 flex-wrap: wrap;
 padding: 0 4px;}
-
+.links img:hover{transform: scale(1.1);}
 
 /* Create four equal columns that sits next to each other */
 .column {
@@ -715,4 +715,11 @@ color:white;
   flex: 100%;
   max-width: 100%;
 }
+}
+
+
+iframe {
+  
+  overflow: scroll;
+  border: 1px solid black;
 }
