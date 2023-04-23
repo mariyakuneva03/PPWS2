@@ -533,7 +533,7 @@ button{background: none;border: none;cursor: pointer;outline: inherit;}
 
 /*FED, MEDIA PRODUCTION, GROUP PROJECT PAGE*/
 h1{color:white;text-align: center; font-size: 2.5em;}
-section.links{display: grid; grid-template-columns: repeat(4,1fr); grid-gap:2em; justify-items: center;margin-top: 4em;margin-bottom: 4em;}
+section.links{display: grid; grid-template-columns: repeat(4,1fr); grid-gap:2em; justify-items: center;margin-top: 4em;margin-bottom: 4em;    align-items: center;}
 section.links a{font-size: 1.2em;line-height: 1.5em;}
 section.links img{width: 12vw;height: auto;}
 section.links img:hover{cursor: pointer;background-color:rgba(192,192,192,0.3);}
