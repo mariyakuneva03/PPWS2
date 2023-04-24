@@ -14,6 +14,7 @@ body {font-family: 'Patrick Hand', cursive;
    background-image:url('img/bg.png');
 }
 a{text-decoration: none;}
+
 body#fed{height: 80vh;}
 
 
@@ -531,80 +532,15 @@ button{background: none;border: none;cursor: pointer;outline: inherit;}
 }
 
 
-/*FED, MEDIA PRODUCTION, GROUP PROJECT PAGE*/
+/* GROUP PROJECT PAGE*/
 h1{color:white;text-align: center; font-size: 2.5em;}
 section.links{display: grid; grid-template-columns: repeat(4,1fr); grid-gap:2em; justify-items: center;margin-top: 4em;margin-bottom: 4em;    align-items: center;}
 section.links a{font-size: 1.2em;line-height: 1.5em;}
-section.links img{width: 12vw;height: auto;}
+section.links img{width: 20vw;height: auto;}
 section.links img:hover{cursor: pointer;background-color:rgba(192,192,192,0.3);}
 .right{ margin-left: 50%;}
 
-#section10{margin:0 auto;}
-#section10 p {
-position: relative;
-color: white;
-margin-top: 4em;
-margin-left: -4.3em;
-width: 10em;
-text-align: center;
 
-}
-#section10 span {
-position: absolute;
-width: 30px;
-height: 50px;
-margin-left: -15px;
-border: 2px solid #fff;
-border-radius: 50px;
-box-sizing: border-box;
-}
-#section10 span::before {
-position: absolute;
-top: 10px;
-left: 50%;
-content: '';
-width: 6px;
-height: 6px;
-margin-left: -3px;
-background-color: #fff;
-border-radius: 100%;
--webkit-animation: sdb10 2s infinite;
-animation: sdb10 2s infinite;
-box-sizing: border-box;
-}
-@-webkit-keyframes sdb10 {
-0% {
-  -webkit-transform: translate(0, 0);
-  opacity: 0;
-}
-40% {
-  opacity: 1;
-}
-80% {
-  -webkit-transform: translate(0, 20px);
-  opacity: 0;
-}
-100% {
-  opacity: 0;
-}
-}
-@keyframes sdb10 {
-0% {
-  transform: translate(0, 0);
-  opacity: 0;
-}
-40% {
-  opacity: 1;
-}
-80% {
-  transform: translate(0, 20px);
-  opacity: 0;
-}
-100% {
-  opacity: 0;
-}
-}
-.none{display: none;}
 
 
 /* ALL MODALS styling */
@@ -717,9 +653,7 @@ color:white;
 }
 }
 
-
-iframe {
-  
-  overflow: scroll;
-  border: 1px solid black;
-}
+/*FED PAGE*/
+section.folders{display: grid; grid-template-columns: repeat(4,1fr); grid-gap:2em; justify-items: center;margin-top: 4em;margin-bottom: 4em;    align-items: center;}
+section.folders img{width: 12vw;height: auto;}
+section.folders img:hover{cursor: pointer;background-color:rgba(192,192,192,0.3);}
