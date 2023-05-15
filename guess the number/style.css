@@ -1,0 +1,4 @@
+body{height: 90vh;}
+.game{width: fit-content;margin: 10vh auto; text-align: center;}
+input {float: right;}
+.center{margin: auto;}

@@ -181,6 +181,7 @@ var modalPP = document.getElementById("pp");
 var modalAP = document.getElementById("ap");
 var modalWL = document.getElementById("wl");
 var modalSM = document.getElementById("sm");
+var modalG = document.getElementById("g");
 let modal=document.getElementsByClassName(".modal");
 var body = document.getElementsByTagName("BODY")[0];
 

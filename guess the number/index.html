@@ -1,6 +1,36 @@
 <!DOCTYPE html>
 <html>
+    <head><link rel="stylesheet" href="style.css"></head>
     <body>
+        <div class="game">
+            <h1>Guess The Number</h1>
+            <div class="data">
+                <div class="player one">
+                    <h2>Player 1</h2>
+                    <label for="fname">Enter name:</label>
+                    <input type="text" id="name1" name="fname"><br><br>
+                    <label for="fname">Enter age:</label>
+                    <input type="text" id="age1" name="fname"><br><br>
+                    <label for="fname">Enter occupation:</label>
+                    <input type="text" id="occ1" name="fname"><br><br>
+                    <label for="fname">Enter country of residence:</label>
+                    <input type="text" id="co1" name="fname"><br><br>
+                </div>
+                <br><br>
+                <div class="player two">
+                    <h2>Player 2</h2>
+                    <label for="fname">Enter name:</label>
+                    <input type="text" id="name2" name="fname"><br><br>
+                    <label for="fname">Enter age:</label>
+                    <input type="text" id="age2" name="fname"><br><br>
+                    <label for="fname">Enter occupation:</label>
+                    <input type="text" id="occ2" name="fname"><br><br>
+                    <label for="fname">Enter country of residence:</label>
+                    <input type="text" id="co2" name="fname"><br><br>
+                </div>
+                <input class="center"type="submit" value="Start" onclick ="start()">
+            </div>
+        </div>
         <script src="GuessTheNumber.js"></script>
     </body>
 </html>
